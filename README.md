@@ -10,5 +10,8 @@ We'll do something along these lines: http://neo.lcc.uma.es/vrp/solution-methods
   - Based on current location and delivery location
 - Route determination
   - Model as a TSP
-  ## Add this to activer the delivery location
+  ## Add this to add the delivery location
   -add the house_1 files in ~/.gazebo/models/
+  
+   ## To resize the house
+  -replace the house_1.dae files in ~/.gazebo/models/meshes with this house_1.dae file
