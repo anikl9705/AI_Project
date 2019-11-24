@@ -1,3 +1,23 @@
+# Heirarchial Planning for Vehicle Routing Problem (VRP)
+Cluster-First, Route Second approach to VRP
+(Refer: http://neo.lcc.uma.es/vrp/solution-methods/heuristics/cluster-first-route-second-method/)
+
+## To-Do
+- Automatic Environment Generation
+  - Number of warehouses
+  - Number of trucks
+  - Number of delivery locations possible
+- Clustering of Packages 
+  - Based on current location and delivery location
+- Route determination
+  - Model as a TSP
+  
+## Add this to add the delivery location
+- Add the house_1 files in ~/.gazebo/models/
+  
+## To resize the house
+- Replace the house_1.dae files in ~/.gazebo/models/meshes with this house_1.dae file
+
 ## Running the Demo
 
 To start the demo, run the following commands in order:
@@ -73,22 +93,3 @@ Sample Action Config explanation:
 The action name is defined as `pick`. It corresponds to the `execute_pick` function implemented in `action_server.py`. The function takes 1 variable parameter i.e. `book_name` defined in the `params` key. The reward for successful execution of this action is `25` and reward for a failed execution is `-25`. The given config defines a stochastic environment where executing this action `pick` can result in `pick` being executed with probability `0.85` or a no-op action (defined as `noaction`) with probability `0.15`
 
 Note: To convert this to a deterministic action, we can change the probability of a `pick` action to `1`
-
-# AI_Project
-We'll do something along these lines: http://neo.lcc.uma.es/vrp/solution-methods/heuristics/cluster-first-route-second-method/
-
-## To-Do
-- Automatic Environment Generation
-  - Number of warehouses
-  - Number of trucks
-  - Number of delivery locations possible
-- Clustering of Packages 
-  - Based on current location and delivery location
-- Route determination
-  - Model as a TSP
-  
-## Add this to add the delivery location
-- Add the house_1 files in ~/.gazebo/models/
-  
-## To resize the house
-- Replace the house_1.dae files in ~/.gazebo/models/meshes with this house_1.dae file
