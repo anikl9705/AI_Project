@@ -67,7 +67,8 @@ class Solver:
             capacities[i] = trucks[i]["Capacity"]
 
         isUpdate = True
-        while isUpdate:
+        iteration_no = 0
+        while isUpdate and iteration_no < (k+1)*4:
             isUpdate = False
             for i in range(n):
                 for j in range(k):
@@ -84,24 +85,33 @@ class Solver:
                 eval_list.put((i, 0))
             while not eval_list.empty():
                 item, no = eval_list.get()
-                while no < k:
+                # print("%s %d" %(item, no))
+                pushed = False
+                while no < k and not pushed:
                     preference = distance_prefs[item][no]
                     if len(clusters[preference]) != 0:
                         if current_capacities[preference] + packages[item]["Size"] <= capacities[preference]:
                             heapq.heappush(clusters[preference], (distances[item][preference], item, no))
+                            # print("Pushing %s %d in %d" %(item, no, distances[item][preference]))
                             current_capacities[preference] += packages[item]["Size"]
+                            pushed = True
                         else:
                             min_dist, min_item, min_no = clusters[preference][0]
                             if min_dist > distances[item][preference]:
                                 if current_capacities[preference] - packages[min_item]["Size"] + packages[item]["Size"] <= capacities[preference]:
                                     heapq.heappop(clusters[preference])
                                     heapq.heappush(clusters[preference], (distances[item][preference], item, no))
+                                    current_capacities[preference] = current_capacities[preference] - packages[min_item]["Size"] + packages[item]["Size"]
+                                    # print("Popping %s from %d" %(min_item, preference))
+                                    # print("Pushing %s %d in %d" %(item, no, distances[item][preference]))
+                                    pushed = True
                                     if min_no < k-1:
                                         eval_list.put((min_item, min_no+1))
                     else:
                         if current_capacities[preference] + packages[item]["Size"] <= capacities[preference]:
                             heapq.heappush(clusters[preference], (distances[item][preference], item, no))
                             current_capacities[preference] += packages[item]["Size"]
+                            pushed = True
                     no += 1
 
                                 
@@ -119,6 +129,8 @@ class Solver:
                     isUpdate = True
             centers = new_centers
 
+            iteration_no += 1
+
         cluster_results = [[] for i in range(k+1)]
         is_selected = np.full((n), False, dtype=bool)
 
@@ -131,9 +143,12 @@ class Solver:
         for i in range(n):
             if not is_selected[i]:
                 cluster_results[k].append(packages[item])
+
+        for i in range(k+1):
+            print(i)
+            print(cluster_results[i])
         
-        print(k)
-        print(cluster_results)
+        # print(k)
         return cluster_results
 
     def tsp_path(self, packages, depot_x, depot_y):
@@ -206,6 +221,8 @@ class Solver:
                     clusters = self.cluster(i)
                     index = 0
                     for cluster in clusters:
+                        if len(cluster) == 0:
+                            continue
                         for elem in cluster:
                             moveList.append(("Load", self.depots[i]["Trucks"][index]["ID"], elem["ID"]))
 
