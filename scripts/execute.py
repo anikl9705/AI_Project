@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from cse571_project.srv import *
+from group_4.srv import *
 from decimal import Decimal
 import rospy
 import os
@@ -17,6 +17,9 @@ ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pard
 parser = argparse.ArgumentParser()
 parser.add_argument('-p', help='for specifying plan file', metavar='5', action='store', dest='plan_file', default='plan_path.pkl', type=str)
 parser.add_argument('-f', help='for specifying environment file', metavar='5', action='store', dest='env_file', default='temp_env.json', type=str)
+
+pkl_file = open(ROOT_PATH + "/weights.pkl", "r")
+weight_matrix = pickle.load(pkl_file)
 
 orientations = {
     "NORTH": {
@@ -159,27 +162,40 @@ class ActionManager:
         y1 = current_state.y
         orientation = current_state.orientation
         next_state = State(x1, y1, orientation)
+        cost = self.cost_multiplier["MoveF"]
 
         if action == "MoveF":
             # Get new location
             if "EAST" == orientation:
                 x2 = x1 + 0.5
                 y2 = y1
+                x_int = int(2*min(x1, x2))
+                y_int = int(2*y1)
+                cost *= weight_matrix[x_int][y_int][1]
             elif "WEST" == orientation:
                 x2 = x1 - 0.5
                 y2 = y1
+                x_int = int(2*min(x1, x2))
+                y_int = int(2*y1)
+                cost *= weight_matrix[x_int][y_int][1]
             elif "NORTH" == orientation:
                 x2 = x1
                 y2 = y1 + 0.5
+                x_int = int(2*x1)
+                y_int = int(2*min(y1,y2))
+                cost *= weight_matrix[x_int][y_int][0]
             else:
                 x2 = x1
                 y2 = y1 - 0.5
+                x_int = int(2*x1)
+                y_int = int(2*min(y1,y2))
+                cost *= weight_matrix[x_int][y_int][0]
             if self.check_edge(x1,y1,x2,y2):
                 next_state.x = x2
                 next_state.y = y2
-                return True, next_state, self.cost_multiplier["MoveF"]
+                return True, next_state, cost
             else:
-                return False, next_state, self.cost_multiplier["MoveF"]
+                return False, next_state, cost
         elif action == "TurnCW":
             next_state.orientation = self.direction_list[(self.direction_list.index(current_state.orientation) + 1)%4]
             return True, next_state, self.cost_multiplier["TurnCW"]
@@ -203,20 +219,31 @@ class ActionManager:
         orientation = current_state.orientation
 
         # Get new location
+        cost = self.cost_multiplier["MoveF"]
         if "EAST" == orientation:
             x2 = x1 + 0.5
             y2 = y1
+            x_int = int(2*min(x1, x2))
+            y_int = int(2*y1)
+            cost *= weight_matrix[x_int][y_int]
         elif "WEST" == orientation:
             x2 = x1 - 0.5
             y2 = y1
+            x_int = int(2*min(x1, x2))
+            y_int = int(2*y1)
+            cost *= weight_matrix[x_int][y_int]
         elif "NORTH" == orientation:
             x2 = x1
             y2 = y1 + 0.5
+            x_int = int(2*x1)
+            y_int = int(2*min(y1,y2))
+            cost *= weight_matrix[x_int][y_int]
         else:
             x2 = x1
             y2 = y1 - 0.5
-        
-        cost = self.cost_multiplier["MoveF"]
+            x_int = int(2*x1)
+            y_int = int(2*min(y1,y2))
+            cost *= weight_matrix[x_int][y_int]
 
         # Check if that edge isn't blocked
         if self.check_edge(x1,y1,x2,y2):
@@ -281,6 +308,8 @@ class Executor:
         self.object_dict = yaml.load(open(file_name, "r"))["Depots"]
         self.helper = ActionManager(self.object_dict)
         self.action_queue = self.refine(plan_file_name, self.object_dict)
+        for action_queue_elem in self.action_queue:
+            print(action_queue_elem)
         self.execute_actions(self.action_queue)
         rospy.spin()
 

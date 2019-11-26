@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from cse571_project.srv import *
+from group_4.srv import *
 import rospy
 import yaml
 import json
