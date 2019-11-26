@@ -1,3 +1,38 @@
+# Headers
+
+import yaml
+import json
+import os
+import random
+import numpy as np
+import heapq
+import Queue as queue
+import itertools
+import math
+import pickle
+from math import degrees, atan2, sqrt
+import operator
+import time
+
+ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
+SAVE_FILE = "plan_path.pkl"
+# print(ROOT_PATH + "/env.json")
+
+
+def distanceCalc(x1, x2, y1, y2, typ):
+    if typ == "Manhattan":
+        return abs(x1-x2) + abs(y1-y2)
+
+class Solver:
+    def __init__(self):
+        # self.environment = environment
+        with open(ROOT_PATH + "/env.json") as json_file:
+            try:
+                env_json = json.load(json_file, parse_float=float)
+                self.depots = env_json["Depots"]
+            except (ValueError, KeyError, TypeError):
+                print("JSON error")
+    
     def drop_place_angles(self, x_depot, y_depot,depot_no):
         i = 0
         drop_place = {}
@@ -152,3 +187,9 @@
                         flag = 0
             cluster_route.append(route)
         return
+
+
+solver = Solver()
+solver.solver_piyush()
+
+        
