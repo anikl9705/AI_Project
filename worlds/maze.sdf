@@ -99,46 +99,50 @@
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
 <model name='wall1'>
-<pose frame=''>-1 1.5 0 0 -0 -1.55905</pose>
-<scale>0.666666666667 1 0.03</scale>
+<pose frame=''>-1 2.25 0 0 -0 -1.55905</pose>
+<scale>0.866666666667 1 0.03</scale>
 <link name='link'>
-<pose frame=''>-1 1.5 0.42 -0 0 -1.55905</pose>
+<pose frame=''>-1 2.25 0.42 -0 0 -1.55905</pose>
 <velocity>0 0 0 0 -0 0</velocity>
 <acceleration>0 0 0 0 -0 0</acceleration>
 <wrench>0 0 0 0 -0 0</wrench>
 </link>
 </model>
 <model name='wall2'>
-<pose frame=''>1.5 4.0 0 0 -0 0</pose>
-<scale>0.666666666667 1 0.03</scale>
+<pose frame=''>2.25 5.5 0 0 -0 0</pose>
+<scale>0.866666666667 1 0.03</scale>
 <link name='link'>
-<pose frame=''>1.5 4.0 0.42 -0 0 0</pose>
+<pose frame=''>2.25 5.5 0.42 -0 0 0</pose>
 <velocity>0 0 0 0 -0 0</velocity>
 <acceleration>0 0 0 0 -0 0</acceleration>
 <wrench>0 0 0 0 -0 0</wrench>
 </link>
 </model>
 <model name='wall3'>
-<pose frame=''>4.0 1.5 0 0 -0 -1.55905</pose>
-<scale>0.666666666667 1 0.03</scale>
+<pose frame=''>5.5 2.25 0 0 -0 -1.55905</pose>
+<scale>0.866666666667 1 0.03</scale>
 <link name='link'>
-<pose frame=''>4.0 1.5 0.42 -0 0 -1.55905</pose>
+<pose frame=''>5.5 2.25 0.42 -0 0 -1.55905</pose>
 <velocity>0 0 0 0 -0 0</velocity>
 <acceleration>0 0 0 0 -0 0</acceleration>
 <wrench>0 0 0 0 -0 0</wrench>
 </link>
 </model>
 <model name='wall4'>
-<pose frame=''>1.5 -1 0 0 -0 0</pose>
-<scale>0.666666666667 1 0.03</scale>
+<pose frame=''>2.25 -1 0 0 -0 0</pose>
+<scale>0.866666666667 1 0.03</scale>
 <link name='link'>
-<pose frame=''>1.5 -1 0.42 -0 0 0</pose>
+<pose frame=''>2.25 -1 0.42 -0 0 0</pose>
 <velocity>0 0 0 0 -0 0</velocity>
 <acceleration>0 0 0 0 -0 0</acceleration>
 <wrench>0 0 0 0 -0 0</wrench>
 </link>
 </model>
+<<<<<<< HEAD
 <model name='Warehouse_1'><pose frame=''>2.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_2'><pose frame=''>0.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_1'><pose frame=''>1.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_2'><pose frame=''>2.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_3'><pose frame=''>0.0 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_4'><pose frame=''>1.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_5'><pose frame=''>3.0 0.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 0.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_6'><pose frame=''>1.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_7'><pose frame=''>0.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_8'><pose frame=''>1.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_9'><pose frame=''>2.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_10'><pose frame=''>1.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model></state><model name='wall1'>
+=======
+<model name='Warehouse_1'><pose frame=''>3.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_2'><pose frame=''>2.0 3.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_3'><pose frame=''>1.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_1'><pose frame=''>2.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_2'><pose frame=''>4.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_3'><pose frame=''>3.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_4'><pose frame=''>1.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_5'><pose frame=''>0.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_6'><pose frame=''>1.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_7'><pose frame=''>3.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_8'><pose frame=''>0.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_9'><pose frame=''>0.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_10'><pose frame=''>2.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_11'><pose frame=''>0.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_12'><pose frame=''>2.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_13'><pose frame=''>0.5 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_14'><pose frame=''>0.5 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_15'><pose frame=''>4.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_16'><pose frame=''>4.0 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_17'><pose frame=''>3.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_18'><pose frame=''>1.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_19'><pose frame=''>1.5 4.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 4.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_20'><pose frame=''>3.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model></state><model name='wall1'>
+>>>>>>> 65c8632af4b197489800d5ec4767e93a6782c2ee
 <static>1</static>
 <link name='link'>
 <pose frame=''>0 0 0.42 0 -0 0</pose>
@@ -1318,6 +1322,1006 @@
 <static>1</static>
 <allow_auto_disable>1</allow_auto_disable>
 <pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_11'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_12'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_13'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_14'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_15'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_16'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_17'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_18'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_19'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Mailbox_20'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>0 0 1 0</ambient>
+<diffuse>0 0 1 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://mailbox/meshes/mailbox.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
 </model><model name='Warehouse_1'>/n<link name='link'>
 <pose frame=''>0 0 0 0 -0 0</pose>
 <inertial>
@@ -1419,6 +2423,106 @@
 <allow_auto_disable>1</allow_auto_disable>
 <pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
 </model><model name='Warehouse_2'>/n<link name='link'>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertial>
+<mass>1</mass>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<inertia>
+<ixx>1</ixx>
+<ixy>0</ixy>
+<ixz>0</ixz>
+<iyy>1</iyy>
+<iyz>0</iyz>
+<izz>1</izz>
+</inertia>
+</inertial>
+<self_collide>0</self_collide>
+<kinematic>0</kinematic>
+<gravity>1</gravity>
+<visual name='visual'>
+<geometry>
+<mesh>
+<uri>model://house_1/meshes/house_1.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<cast_shadows>1</cast_shadows>
+<transparency>0</transparency>
+<material>
+<ambient>1 0 0 0</ambient>
+<diffuse>1 0 0 0</diffuse>
+<specular>0 0 0 1</specular>
+<emissive>0 0 0 1</emissive>
+<script>
+<name>ModelPreview_1::link::visual_MATERIAL_</name>
+<uri>__default__</uri>
+</script>
+<shader type='vertex'>
+<normal_map>__default__</normal_map>
+</shader>
+</material>
+</visual>
+<collision name='collision_0'>
+<laser_retro>0</laser_retro>
+<max_contacts>10</max_contacts>
+<pose frame=''>0 0 0 0 -0 0</pose>
+<geometry>
+<mesh>
+<uri>model://house_1/meshes/house_1.dae</uri>
+<scale>0.5 0.5 1</scale>
+</mesh>
+</geometry>
+<surface>
+<friction>
+<ode>
+<mu>1</mu>
+<mu2>1</mu2>
+<fdir1>0 0 0</fdir1>
+<slip1>0</slip1>
+<slip2>0</slip2>
+</ode>
+<torsional>
+<coefficient>1</coefficient>
+<patch_radius>0</patch_radius>
+<surface_radius>0</surface_radius>
+<use_patch_radius>1</use_patch_radius>
+<ode>
+<slip>0</slip>
+</ode>
+</torsional>
+</friction>
+<bounce>
+<restitution_coefficient>0</restitution_coefficient>
+<threshold>1e+06</threshold>
+</bounce>
+<contact>
+<collide_without_contact>0</collide_without_contact>
+<collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+<collide_bitmask>0</collide_bitmask>
+<ode>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+<max_vel>0.01</max_vel>
+<min_depth>0</min_depth>
+</ode>
+<bullet>
+<split_impulse>1</split_impulse>
+<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+<soft_cfm>0</soft_cfm>
+<soft_erp>0.2</soft_erp>
+<kp>1e+13</kp>
+<kd>1</kd>
+</bullet>
+</contact>
+</surface>
+</collision>
+</link>
+<static>1</static>
+<allow_auto_disable>1</allow_auto_disable>
+<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>
+</model><model name='Warehouse_3'>/n<link name='link'>
 <pose frame=''>0 0 0 0 -0 0</pose>
 <inertial>
 <mass>1</mass>

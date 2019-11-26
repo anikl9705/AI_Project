@@ -5,6 +5,7 @@ import random
 import pprint
 import json
 import copy
+import pickle
 
 class Maze:
 
@@ -203,6 +204,18 @@ class Maze:
 		f_out = self.copy_empty_world(root_path)
 		self.add_walls(f_out, self.grid_dimension*self.myscale)
 		np.random.seed(seed)
+
+		dim = int(self.grid_dimension)
+		weight_matrix = np.zeros((dim+1, dim+1, 2))
+
+		for i in range(dim+1):
+			for j in range(dim+1):
+				weight_matrix[i][j][0] = 2*np.random.random_sample()+1
+				weight_matrix[i][j][1] = 2*np.random.random_sample()+1
+
+		with open(root_path + "/weights.pkl", "w") as pkl_file:
+			pickle.dump(weight_matrix, pkl_file)
+
 		for i in range(n_depots):
 			x = self.myscale*np.random.randint(0, (self.grid_dimension+1))
 			y = self.myscale*np.random.randint(0, (self.grid_dimension+1))
