@@ -28,7 +28,7 @@ class PID(object):
 		self.KP_rot_angular = 5.0
 		self.KD_rot_angular = 100.0
 
-		self.max_vel = 0.4
+		self.max_vel = 1.0
 		self.max_rot = 3.0
 		self.max_rot_angular = 0.3
 		
@@ -192,8 +192,6 @@ class PID(object):
 		self.target_pose.orientation.y = target_quat[1]
 		self.target_pose.orientation.z = target_quat[2]
 		self.target_pose.orientation.w = target_quat[3]
-
-		print(self.current_pose)
 
 		error_x = abs(abs(self.target_pose.position.x) - abs(self.current_pose.position.x))
 		error_y = abs(abs(self.target_pose.position.y) - abs(self.current_pose.position.y))
