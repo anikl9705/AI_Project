@@ -46,9 +46,9 @@ class PID(object):
 
 		self.last_time = None
 
-		rospy.Subscriber('/odom', Odometry, self.pose_callback, queue_size=1)
-		self.velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
-		self.controller_status_publisher = rospy.Publisher('/Controller_Status', String, queue_size=1)
+		rospy.Subscriber('odom', Odometry, self.pose_callback, queue_size=1)
+		self.velocity_publisher = rospy.Publisher('cmd_vel', Twist, queue_size=1)
+		self.controller_status_publisher = rospy.Publisher('Controller_Status', String, queue_size=1)
 
 	def set_current_pose(self, current_pose):
 		if self.init_val_flag == 0:
@@ -103,8 +103,7 @@ class PID(object):
 				self.last_time = cur_time
 			dt = cur_time - self.last_time
 			self.last_time = cur_time
-		
-		
+
 		self.p_error_x = self.linear_error_conditions()
 		
 		if dt == 0.0:
@@ -193,6 +192,8 @@ class PID(object):
 		self.target_pose.orientation.y = target_quat[1]
 		self.target_pose.orientation.z = target_quat[2]
 		self.target_pose.orientation.w = target_quat[3]
+
+		print(self.current_pose)
 
 		error_x = abs(abs(self.target_pose.position.x) - abs(self.current_pose.position.x))
 		error_y = abs(abs(self.target_pose.position.y) - abs(self.current_pose.position.y))

@@ -17,10 +17,10 @@ class moveTbot3:
 		rospy.init_node('move_turtle',anonymous = True)
 		self.actions = String()
 		self.pose = Pose()
-		self.vel_pub = rospy.Publisher('/cmd_vel',Twist,queue_size=10)
+		self.vel_pub = rospy.Publisher('cmd_vel',Twist,queue_size=10)
 		self.action_subscriber = rospy.Subscriber('/actions',String,self.callback_actions)
-		self.pid_subscriber = rospy.Subscriber("/Controller_Status",String,self.callback_pid)
-		self.pose_subscriber = rospy.Subscriber('/odom',Odometry,self.pose_callback)
+		self.pid_subscriber = rospy.Subscriber("Controller_Status",String,self.callback_pid)
+		self.pose_subscriber = rospy.Subscriber('odom',Odometry,self.pose_callback)
 		self.status_publisher = rospy.Publisher("/status",String,queue_size = 10)
 		self.free = String(data = "Idle")
 		self.rate = rospy.Rate(30)
@@ -39,6 +39,7 @@ class moveTbot3:
 		# self.move()
 
 	def execute_next(self):
+		print(self.actions)
 		action = self.actions.pop(0)
 		direction = None
 		if action == "MoveF" or action == "MoveB":

@@ -1,20 +1,26 @@
-# Headers
+#!/usr/bin/env python
 
+from cse571_project.srv import *
+import rospy
 import yaml
 import json
 import os
 import random
 import numpy as np
 import heapq
+import argparse
 import Queue as queue
 import itertools
 import math
 import pickle
+from gazebo_msgs.srv import DeleteModel, SpawnModel
+from geometry_msgs.msg import Pose
 
 ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
-SAVE_FILE = "plan_path.pkl"
-print(ROOT_PATH + "/env.json")
-
+SAVE_FILE = ROOT_PATH + "/" + "plan_path.pkl"
+LOAD_FILE = ROOT_PATH + "/" + "temp_env.json"
+parser = argparse.ArgumentParser()
+parser.add_argument('-f', help='for specifying environment file', metavar='5', action='store', dest='LOAD_FILE', default='temp_env.json', type=str)
 
 def distanceCalc(x1, x2, y1, y2, typ):
     if typ == "Manhattan":
@@ -23,7 +29,7 @@ def distanceCalc(x1, x2, y1, y2, typ):
 class Solver:
     def __init__(self):
         # self.environment = environment
-        with open(ROOT_PATH + "/env.json") as json_file:
+        with open(LOAD_FILE) as json_file:
             try:
                 env_json = json.load(json_file, parse_float=float)
                 self.depots = env_json["Depots"]
@@ -33,6 +39,8 @@ class Solver:
     def cluster(self, depot_no, mode="kmeans"):
         packages = self.depots[depot_no]["Packages"]
         trucks = self.depots[depot_no]["Trucks"]
+        if len(trucks) == 0:
+            return []
         trucks = sorted(trucks, key=lambda x: x["Capacity"], reverse=True)
 
         if mode == "kmeans":
@@ -124,6 +132,8 @@ class Solver:
             if not is_selected[i]:
                 cluster_results[k].append(packages[item])
         
+        print(k)
+        print(cluster_results)
         return cluster_results
 
     def tsp_path(self, packages, depot_x, depot_y):
@@ -223,11 +233,34 @@ class Solver:
                         for truck in trucks:
                             moveList.append(("Move", truck["ID"], self.depots[min_depot]["x"], self.depots[min_depot]["y"]))
         
-        print(moveList)
-        with open(SAVE_FILE, 'wb') as path_file:
+        for move in moveList:
+            print move
+        # print(moveList)
+        open(SAVE_FILE)
+        with open(SAVE_FILE, 'w') as path_file:
             pickle.dump(moveList, path_file)
 
-solver = Solver()
-solver.solve()
+if __name__ == "__main__":
+    args = parser.parse_args()
+    LOAD_FILE = ROOT_PATH + "/" + args.LOAD_FILE
+    solver = Solver()
+    solver.solve()
+    # rospy.init_node('solver')
+    # pub_spawn = rospy.ServiceProxy("/gazebo/spawn_urdf_model",SpawnModel)
+    # model_name="Turtlebot3_waffle"
+    # model_xml=open("temp.urdf", "r").read()
+    # reference_frame="world"
+    # robot_namespace="A"
+    # initial_pose = Pose()
+    # initial_pose.position.x=0
+    # initial_pose.position.y=0
+    # initial_pose.position.z=0
+    # initial_pose.orientation.x=0
+    # initial_pose.orientation.y=0
+    # initial_pose.orientation.z=0
+    # initial_pose.orientation.w=0
+    # result = pub_spawn(model_name=model_name, model_xml=model_xml, reference_frame=reference_frame, robot_namespace=robot_namespace, initial_pose=initial_pose)
+    # pub_del = rospy.ServiceProxy("/gazebo/delete_model",DeleteModel)
+    # pub_del(model_name)
 
         
