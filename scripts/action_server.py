@@ -3,7 +3,7 @@
 import rospy
 from gazebo_msgs.msg import ModelState,ModelStates
 from std_msgs.msg import String
-from cse571_project.srv import *
+from group_4.srv import *
 import numpy as np
 import tf
 import math

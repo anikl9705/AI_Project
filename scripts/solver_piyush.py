@@ -1,5 +1,7 @@
-# Headers
+#!/usr/bin/env python
 
+from group_4.srv import *
+import rospy
 import yaml
 import json
 import os
@@ -10,6 +12,7 @@ import Queue as queue
 import itertools
 import math
 import pickle
+import argparse
 from math import degrees, atan2, sqrt
 import operator
 import time
@@ -17,6 +20,8 @@ import time
 ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 SAVE_FILE = "plan_path.pkl"
 # print(ROOT_PATH + "/env.json")
+parser = argparse.ArgumentParser()
+parser.add_argument('-f', help='for specifying environment file', metavar='5', action='store', dest='LOAD_FILE', default='temp_env.json', type=str)
 
 
 def distanceCalc(x1, x2, y1, y2, typ):
@@ -24,77 +29,15 @@ def distanceCalc(x1, x2, y1, y2, typ):
         return abs(x1-x2) + abs(y1-y2)
 
 class Solver:
-    def __init__(self):
+    def __init__(self, LOAD_FILE):
         # self.environment = environment
-        with open(ROOT_PATH + "/env.json") as json_file:
+        with open(LOAD_FILE) as json_file:
             try:
                 env_json = json.load(json_file, parse_float=float)
                 self.depots = env_json["Depots"]
             except (ValueError, KeyError, TypeError):
                 print("JSON error")
-    
-    def drop_place_angles(self, x_depot, y_depot,depot_no):
-        i = 0
-        drop_place = {}
         
-        for package_no in range(0, len(self.depots[depot_no]['Packages'])):
-            i += 1
-            x = self.depots[depot_no]['Packages'][package_no]['x']
-            y = self.depots[depot_no]['Packages'][package_no]['y']
-            pack_size = self.depots[depot_no]['Packages'][package_no]['Size']
-            pack_id = self.depots[depot_no]['Packages'][package_no]['ID']
-            angle = degrees(atan2((y - y_depot),(x - x_depot)))
-            angle_from_north = (90 - angle) % 360
-            new = {str("customer_"+str(i)):{"angle":angle_from_north,"x":x,"y":y, "pack_size":pack_size,"pack_id":pack_id}}
-            drop_place.update(new) 
-        
-        drop_place_list = drop_place.items()
-        sorted_drop_place =  sorted(drop_place_list, key = operator.itemgetter(1))
-        return sorted_drop_place
-
-    def solver_piyush(self):
-        moveList = []
-        for depot_no in range(0, len(self.depots)):
-            x_depot = self.depots[depot_no]['x']
-            y_depot = self.depots[depot_no]['y']
-            list_with_angles = self.drop_place_angles(x_depot,y_depot,depot_no)
-            cluster = [[('depot', {'y': y_depot, 'x': x_depot})]]
-            index = -1
-            flag_1 = 1
-
-            while list_with_angles:
-                for truck_no in range(0,len(self.depots[depot_no]["Trucks"])):
-                    capacity = self.depots[depot_no]["Trucks"][truck_no]["Capacity"]
-                    truck_id = self.depots[depot_no]["Trucks"][truck_no]["ID"]
-                    size = 0
-                    size_index = 1
-                    index += 1
-                    if index != 0:
-                        cluster.append([('depot', {'y': y_depot, 'x': x_depot})])
-                    flag = 1
-                    while flag:
-                        if not list_with_angles:
-                            flag_1 = 0
-                            break
-                        out = list_with_angles.pop(0) 
-                        out_list = list(out)   
-                        out_list.append(truck_id)
-                        out = tuple(out_list)
-                        cluster[index].append(out)
-                        size += cluster[index][size_index][1]['pack_size']
-                        moveList.append(("Load", truck_id, cluster[index][size_index][1]['pack_id']))
-                        if size >= capacity:
-                            flag = 0
-                        size_index +=1
-                
-                if flag_1 == 0:
-                    break
-            self.distance_matrix(cluster,x_depot,y_depot,moveList)
-        
-        print moveList
-        with open(SAVE_FILE, 'wb') as path_file:
-            pickle.dump(moveList, path_file)
-            
     def distance_matrix(self,truck,x_depot,y_depot,moveList):
         matrix = []
         
@@ -188,8 +131,72 @@ class Solver:
             cluster_route.append(route)
         return
 
+    def drop_place_angles(self, x_depot, y_depot,depot_no):
+        i = 0
+        drop_place = {}
+        
+        for package_no in range(0, len(self.depots[depot_no]['Packages'])):
+            i += 1
+            x = self.depots[depot_no]['Packages'][package_no]['x']
+            y = self.depots[depot_no]['Packages'][package_no]['y']
+            pack_size = self.depots[depot_no]['Packages'][package_no]['Size']
+            pack_id = self.depots[depot_no]['Packages'][package_no]['ID']
+            angle = degrees(atan2((y - y_depot),(x - x_depot)))
+            angle_from_north = (90 - angle) % 360
+            new = {str("customer_"+str(i)):{"angle":angle_from_north,"x":x,"y":y, "pack_size":pack_size,"pack_id":pack_id}}
+            drop_place.update(new) 
+        
+        drop_place_list = drop_place.items()
+        sorted_drop_place =  sorted(drop_place_list, key = operator.itemgetter(1))
+        return sorted_drop_place
 
-solver = Solver()
-solver.solver_piyush()
+    def solver_piyush(self):
+        moveList = []
+        for depot_no in range(0, len(self.depots)):
+            x_depot = self.depots[depot_no]['x']
+            y_depot = self.depots[depot_no]['y']
+            list_with_angles = self.drop_place_angles(x_depot,y_depot,depot_no)
+            cluster = [[('depot', {'y': y_depot, 'x': x_depot})]]
+            index = -1
+            flag_1 = 1
+
+            while list_with_angles:
+                for truck_no in range(0,len(self.depots[depot_no]["Trucks"])):
+                    capacity = self.depots[depot_no]["Trucks"][truck_no]["Capacity"]
+                    truck_id = self.depots[depot_no]["Trucks"][truck_no]["ID"]
+                    size = 0
+                    size_index = 1
+                    index += 1
+                    if index != 0:
+                        cluster.append([('depot', {'y': y_depot, 'x': x_depot})])
+                    flag = 1
+                    while flag:
+                        if not list_with_angles:
+                            flag_1 = 0
+                            break
+                        out = list_with_angles.pop(0) 
+                        out_list = list(out)   
+                        out_list.append(truck_id)
+                        out = tuple(out_list)
+                        cluster[index].append(out)
+                        size += cluster[index][size_index][1]['pack_size']
+                        moveList.append(("Load", truck_id, cluster[index][size_index][1]['pack_id']))
+                        if size >= capacity:
+                            flag = 0
+                        size_index +=1
+                
+                if flag_1 == 0:
+                    break
+            self.distance_matrix(cluster,x_depot,y_depot,moveList)
+        
+        print moveList
+        with open(SAVE_FILE, 'w') as path_file:
+            pickle.dump(moveList, path_file)
+            
+if __name__ == "__main__":
+    args = parser.parse_args()
+    LOAD_FILE = ROOT_PATH + "/" + args.LOAD_FILE
+    solver = Solver(LOAD_FILE)
+    solver.solver_piyush()
 
         
