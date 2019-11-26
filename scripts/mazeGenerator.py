@@ -267,18 +267,6 @@ class Maze:
 		f_out.close()
 		z = 1.0
 
-		with open(root_path + "/launch/base.launch", "r") as base_file:
-			with open(root_path + "/launch/world.launch", "w") as final_file:
-				final_file.write(base_file.read())
-				for i in range(n_trucks):
-					x = depots[assignment[i]]["x"]
-					y = depots[assignment[i]]["y"]
-					# z = 0
-					# final_file.write("<node pkg=\"gazebo_ros\" type=\"spawn_model\" name=\"spawn_urdf_{3}\" args=\"-urdf -model turtlebot3_$(arg model)_{3} -x {0} -y {1} -z {2} -param robot_description -robot_namespace truck_{3}\"/>\n".format(x, y, z, i+1))
-				final_file.write("</launch>\n")
-				final_file.close()
-			base_file.close()
-
 		# list_of_list_of_coords = []
 		# f_out = self.copy_empty_world(root_path)
 		# self.add_walls(f_out, self.grid_dimension*self.myscale)
