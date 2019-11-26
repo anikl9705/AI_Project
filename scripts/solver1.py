@@ -236,7 +236,7 @@ class Solver:
         for move in moveList:
             print move
         # print(moveList)
-        open(SAVE_FILE)
+        open(SAVE_FILE, 'w').close()
         with open(SAVE_FILE, 'w') as path_file:
             pickle.dump(moveList, path_file)
 

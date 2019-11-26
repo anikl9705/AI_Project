@@ -333,6 +333,7 @@ class Executor:
 
     def refine(self, plan_file_name, depots):
         trucks = {}
+        total_cost = 0
         for depot in depots:
             for truck in depot["Trucks"]:
                 temp_truck = {
@@ -353,10 +354,12 @@ class Executor:
             else:
                 current_state = get_state_from_dict(trucks[action[1]])
                 goal_state = State(action[2], action[3], "EAST")
-                path, final_state, _ = self.get_path(current_state, goal_state)
+                path, final_state, _, cost = self.get_path(current_state, goal_state)
+                total_cost += cost
                 # print(final_state)
                 trucks[action[1]] = update_truck_from_state(truck, final_state)
                 action_queue.append(("Move", action[1], path))
+        print(total_cost)
         return action_queue
 
     def is_goal_state(self, current_state, goal_state):
@@ -379,6 +382,7 @@ class Executor:
         visited = []
         state_cost = {}
         insert_order = 0
+        current_cost = 0
 
         while len(state_queue) > 0:
             _,_,current,current_cost=heapq.heappop(state_queue)
@@ -416,7 +420,7 @@ class Executor:
             final_state = current_state
             goal_reached = True
 
-        return action_list, final_state, goal_reached
+        return action_list, final_state, goal_reached, current_cost
 
 
 if __name__ == "__main__":
