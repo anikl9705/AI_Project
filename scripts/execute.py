@@ -354,6 +354,7 @@ class Executor:
                 current_state = get_state_from_dict(trucks[action[1]])
                 goal_state = State(action[2], action[3], "EAST")
                 path, final_state, _ = self.get_path(current_state, goal_state)
+                # print(final_state)
                 trucks[action[1]] = update_truck_from_state(truck, final_state)
                 action_queue.append(("Move", action[1], path))
         return action_queue
@@ -367,6 +368,7 @@ class Executor:
         return abs(state1.x - state2.x) + abs(state1.y - state2.y)
 
     def get_path(self, init_state, goal_state):
+        # print(init_state.x, init_state.y, goal_state.x, goal_state.y)
         final_state = None
         goal_reached = False
         possible_actions = ['MoveF', 'TurnCW', 'TurnCCW']
@@ -381,6 +383,7 @@ class Executor:
         while len(state_queue) > 0:
             _,_,current,current_cost=heapq.heappop(state_queue)
             current_state, current_actions = current
+            # print(current_state.x, current_state.y)
             # top_item = heapq.heappop(state_queue)
             # current_cost = top_item[0]
             # current_state = top_item[2][0]
