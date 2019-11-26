@@ -6,7 +6,7 @@ from mazeGenerator import *
 import sys
 import argparse
 import time
-from action_server import RobotActionsServer 
+# from action_server import RobotActionsServer 
 import pickle
 import copy
 import os
@@ -42,7 +42,7 @@ def check_is_edge(req):
 def handle_reset_world(req):
 	global mazeInfo
 	mazeInfo = copy.deepcopy(mazeInfoCopy)
-	robot_action_server.current_state = robot_action_server.generate_init_state()
+	# robot_action_server.current_state = robot_action_server.generate_init_state()
 	return 1
 
 

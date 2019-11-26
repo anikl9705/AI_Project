@@ -138,11 +138,7 @@
 <wrench>0 0 0 0 -0 0</wrench>
 </link>
 </model>
-<<<<<<< HEAD
-<model name='Warehouse_1'><pose frame=''>2.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_2'><pose frame=''>0.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_1'><pose frame=''>1.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_2'><pose frame=''>2.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_3'><pose frame=''>0.0 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_4'><pose frame=''>1.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_5'><pose frame=''>3.0 0.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 0.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_6'><pose frame=''>1.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_7'><pose frame=''>0.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_8'><pose frame=''>1.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_9'><pose frame=''>2.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_10'><pose frame=''>1.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model></state><model name='wall1'>
-=======
-<model name='Warehouse_1'><pose frame=''>3.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_2'><pose frame=''>2.0 3.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_3'><pose frame=''>1.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_1'><pose frame=''>2.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_2'><pose frame=''>4.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_3'><pose frame=''>3.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_4'><pose frame=''>1.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_5'><pose frame=''>0.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_6'><pose frame=''>1.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_7'><pose frame=''>3.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_8'><pose frame=''>0.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_9'><pose frame=''>0.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_10'><pose frame=''>2.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_11'><pose frame=''>0.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_12'><pose frame=''>2.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_13'><pose frame=''>0.5 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_14'><pose frame=''>0.5 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_15'><pose frame=''>4.5 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.5 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_16'><pose frame=''>4.0 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_17'><pose frame=''>3.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_18'><pose frame=''>1.0 4.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 4.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_19'><pose frame=''>1.5 4.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.5 4.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_20'><pose frame=''>3.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model></state><model name='wall1'>
->>>>>>> 65c8632af4b197489800d5ec4767e93a6782c2ee
+<model name='Warehouse_1'><pose frame=''>1.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_2'><pose frame=''>3.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Warehouse_3'><pose frame=''>1.0 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_1'><pose frame=''>3.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_2'><pose frame=''>2.0 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_3'><pose frame=''>0.5 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_4'><pose frame=''>4.5 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.5 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_5'><pose frame=''>3.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>3.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_6'><pose frame=''>2.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_7'><pose frame=''>4.5 0.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.5 0.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_8'><pose frame=''>2.5 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_9'><pose frame=''>2.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_10'><pose frame=''>4.0 2.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 2.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_11'><pose frame=''>1.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>1.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_12'><pose frame=''>2.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_13'><pose frame=''>2.0 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_14'><pose frame=''>4.0 1.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>4.0 1.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_15'><pose frame=''>0.5 0.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 0.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_16'><pose frame=''>0.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_17'><pose frame=''>0.0 0.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>0.0 0.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_18'><pose frame=''>2.0 3.0 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 3.0 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_19'><pose frame=''>2.0 1.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.0 1.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model><model name='Mailbox_20'><pose frame=''>2.5 2.5 0 0 -0 0</pose><scale>0.5 0.5 0.35</scale><link name='link'><pose frame=''>2.5 2.5 0 0 -0 0</pose><velocity>0 0 0 0 -0 0</velocity><acceleration>0 0 0 0 -0 0</acceleration><wrench>0 0 0 0 -0 0</wrench></link></model></state><model name='wall1'>
 <static>1</static>
 <link name='link'>
 <pose frame=''>0 0 0.42 0 -0 0</pose>
@@ -349,8 +345,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -449,8 +445,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -549,8 +545,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -649,8 +645,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -749,8 +745,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -849,8 +845,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -949,8 +945,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1049,8 +1045,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1149,8 +1145,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1249,8 +1245,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1349,8 +1345,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1449,8 +1445,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1549,8 +1545,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1649,8 +1645,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1749,8 +1745,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1849,8 +1845,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -1949,8 +1945,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -2049,8 +2045,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -2149,8 +2145,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -2249,8 +2245,8 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>0 0 1 0</ambient>
-<diffuse>0 0 1 0</diffuse>
+<ambient>0.3 0.9 0.2 0</ambient>
+<diffuse>0.3 0.9 0.2 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
@@ -2349,16 +2345,14 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>1 0 0 0</ambient>
-<diffuse>1 0 0 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
-<name>ModelPreview_1::link::visual_MATERIAL_</name>
-<uri>__default__</uri>
+<name>House_1/Diffuse</name>
+<uri>model://house_1/materials/textures</uri>
 </script>
-<shader type='vertex'>
-<normal_map>__default__</normal_map>
+<shader type='normal_map_tangent_space'>
+<normal_map>House_1_Normal.png</normal_map>
 </shader>
 </material>
 </visual>
@@ -2449,16 +2443,14 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>1 0 0 0</ambient>
-<diffuse>1 0 0 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
-<name>ModelPreview_1::link::visual_MATERIAL_</name>
-<uri>__default__</uri>
+<name>House_1/Diffuse</name>
+<uri>model://house_1/materials/textures</uri>
 </script>
-<shader type='vertex'>
-<normal_map>__default__</normal_map>
+<shader type='normal_map_tangent_space'>
+<normal_map>House_1_Normal.png</normal_map>
 </shader>
 </material>
 </visual>
@@ -2549,16 +2541,14 @@
 <cast_shadows>1</cast_shadows>
 <transparency>0</transparency>
 <material>
-<ambient>1 0 0 0</ambient>
-<diffuse>1 0 0 0</diffuse>
 <specular>0 0 0 1</specular>
 <emissive>0 0 0 1</emissive>
 <script>
-<name>ModelPreview_1::link::visual_MATERIAL_</name>
-<uri>__default__</uri>
+<name>House_1/Diffuse</name>
+<uri>model://house_1/materials/textures</uri>
 </script>
-<shader type='vertex'>
-<normal_map>__default__</normal_map>
+<shader type='normal_map_tangent_space'>
+<normal_map>House_1_Normal.png</normal_map>
 </shader>
 </material>
 </visual>

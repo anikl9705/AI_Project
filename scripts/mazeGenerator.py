@@ -79,8 +79,8 @@ class Maze:
 				f_out.write("<pose frame=''>0 0 0 0 -0 0</pose>\n<inertia>\n<ixx>1</ixx>\n<ixy>0</ixy>\n<ixz>0</ixz>\n<iyy>1</iyy>\n<iyz>0</iyz>\n<izz>1</izz>\n</inertia>\n</inertial>\n")
 				f_out.write("<self_collide>0</self_collide>\n<kinematic>0</kinematic>\n<gravity>1</gravity>\n<visual name='visual'>\n<geometry>\n")
 				f_out.write("<mesh>\n<uri>model://house_1/meshes/house_1.dae</uri>\n<scale>{0} {0} 1</scale>\n</mesh>\n</geometry>\n".format(scale))
-				f_out.write("<cast_shadows>1</cast_shadows>\n<transparency>0</transparency>\n<material>\n<ambient>{0} {1} {2} 0</ambient>\n<diffuse>{0} {1} {2} 0</diffuse>\n<specular>0 0 0 1</specular>\n<emissive>0 0 0 1</emissive>\n".format(1,0,0))
-				f_out.write("<script>\n<name>ModelPreview_1::link::visual_MATERIAL_</name>\n<uri>__default__</uri>\n</script>\n<shader type='vertex'>\n<normal_map>__default__</normal_map>\n</shader>\n</material>\n</visual>\n<collision name='collision_0'>\n<laser_retro>0</laser_retro>\n<max_contacts>10</max_contacts>\n<pose frame=''>0 0 0 0 -0 0</pose>\n<geometry>\n<mesh>\n<uri>model://house_1/meshes/house_1.dae</uri>\n<scale>{} {} 1</scale>\n</mesh>\n</geometry>\n<surface>\n<friction>\n<ode>\n<mu>1</mu>\n<mu2>1</mu2>\n<fdir1>0 0 0</fdir1>\n<slip1>0</slip1>\n<slip2>0</slip2>\n</ode>\n<torsional>\n<coefficient>1</coefficient>\n<patch_radius>0</patch_radius>\n<surface_radius>0</surface_radius>\n<use_patch_radius>1</use_patch_radius>\n<ode>\n<slip>0</slip>\n</ode>\n</torsional>\n</friction>\n<bounce>\n<restitution_coefficient>0</restitution_coefficient>\n<threshold>1e+06</threshold>\n</bounce>\n<contact>\n<collide_without_contact>0</collide_without_contact>\n<collide_without_contact_bitmask>1</collide_without_contact_bitmask>\n<collide_bitmask>0</collide_bitmask>\n<ode>\n".format(scale, scale))
+				f_out.write("<cast_shadows>1</cast_shadows>\n<transparency>0</transparency>\n<material>\n<specular>0 0 0 1</specular>\n<emissive>0 0 0 1</emissive>\n")
+				f_out.write("<script>\n<name>House_1/Diffuse</name>\n<uri>model://house_1/materials/textures</uri>\n</script>\n<shader type='normal_map_tangent_space'>\n<normal_map>House_1_Normal.png</normal_map>\n</shader>\n</material>\n</visual>\n<collision name='collision_0'>\n<laser_retro>0</laser_retro>\n<max_contacts>10</max_contacts>\n<pose frame=''>0 0 0 0 -0 0</pose>\n<geometry>\n<mesh>\n<uri>model://house_1/meshes/house_1.dae</uri>\n<scale>{} {} 1</scale>\n</mesh>\n</geometry>\n<surface>\n<friction>\n<ode>\n<mu>1</mu>\n<mu2>1</mu2>\n<fdir1>0 0 0</fdir1>\n<slip1>0</slip1>\n<slip2>0</slip2>\n</ode>\n<torsional>\n<coefficient>1</coefficient>\n<patch_radius>0</patch_radius>\n<surface_radius>0</surface_radius>\n<use_patch_radius>1</use_patch_radius>\n<ode>\n<slip>0</slip>\n</ode>\n</torsional>\n</friction>\n<bounce>\n<restitution_coefficient>0</restitution_coefficient>\n<threshold>1e+06</threshold>\n</bounce>\n<contact>\n<collide_without_contact>0</collide_without_contact>\n<collide_without_contact_bitmask>1</collide_without_contact_bitmask>\n<collide_bitmask>0</collide_bitmask>\n<ode>\n".format(scale, scale))
 				f_out.write("<soft_cfm>0</soft_cfm>\n<soft_erp>0.2</soft_erp>\n<kp>1e+13</kp>\n<kd>1</kd>\n<max_vel>0.01</max_vel>\n<min_depth>0</min_depth>\n</ode>\n<bullet>\n<split_impulse>1</split_impulse>\n<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>\n<soft_cfm>0</soft_cfm>\n<soft_erp>0.2</soft_erp>\n<kp>1e+13</kp>\n<kd>1</kd>\n</bullet>\n</contact>\n</surface>\n</collision>\n</link>\n<static>1</static>\n<allow_auto_disable>1</allow_auto_disable>\n<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>\n</model>")
 			
 	#change in dimenssion of the book is handled in this function.
@@ -106,7 +106,7 @@ class Maze:
 			f_out.write("<pose frame=''>0 0 0 0 -0 0</pose>\n<inertia>\n<ixx>1</ixx>\n<ixy>0</ixy>\n<ixz>0</ixz>\n<iyy>1</iyy>\n<iyz>0</iyz>\n<izz>1</izz>\n</inertia>\n</inertial>\n")
 			f_out.write("<self_collide>0</self_collide>\n<kinematic>0</kinematic>\n<gravity>1</gravity>\n<visual name='visual'>\n<geometry>\n")
 			f_out.write("<mesh>\n<uri>model://mailbox/meshes/mailbox.dae</uri>\n<scale>{0} {0} 1</scale>\n</mesh>\n</geometry>\n".format(scale))
-			f_out.write("<cast_shadows>1</cast_shadows>\n<transparency>0</transparency>\n<material>\n<ambient>{0} {1} {2} 0</ambient>\n<diffuse>{0} {1} {2} 0</diffuse>\n<specular>0 0 0 1</specular>\n<emissive>0 0 0 1</emissive>\n".format(0,0,1))
+			f_out.write("<cast_shadows>1</cast_shadows>\n<transparency>0</transparency>\n<material>\n<ambient>{0} {1} {2} 0</ambient>\n<diffuse>{0} {1} {2} 0</diffuse>\n<specular>0 0 0 1</specular>\n<emissive>0 0 0 1</emissive>\n".format(0.3,0.9,0.2))
 			f_out.write("<script>\n<name>ModelPreview_1::link::visual_MATERIAL_</name>\n<uri>__default__</uri>\n</script>\n<shader type='vertex'>\n<normal_map>__default__</normal_map>\n</shader>\n</material>\n</visual>\n<collision name='collision_0'>\n<laser_retro>0</laser_retro>\n<max_contacts>10</max_contacts>\n<pose frame=''>0 0 0 0 -0 0</pose>\n<geometry>\n<mesh>\n<uri>model://mailbox/meshes/mailbox.dae</uri>\n<scale>{} {} 1</scale>\n</mesh>\n</geometry>\n<surface>\n<friction>\n<ode>\n<mu>1</mu>\n<mu2>1</mu2>\n<fdir1>0 0 0</fdir1>\n<slip1>0</slip1>\n<slip2>0</slip2>\n</ode>\n<torsional>\n<coefficient>1</coefficient>\n<patch_radius>0</patch_radius>\n<surface_radius>0</surface_radius>\n<use_patch_radius>1</use_patch_radius>\n<ode>\n<slip>0</slip>\n</ode>\n</torsional>\n</friction>\n<bounce>\n<restitution_coefficient>0</restitution_coefficient>\n<threshold>1e+06</threshold>\n</bounce>\n<contact>\n<collide_without_contact>0</collide_without_contact>\n<collide_without_contact_bitmask>1</collide_without_contact_bitmask>\n<collide_bitmask>0</collide_bitmask>\n<ode>\n".format(scale, scale))
 			f_out.write("<soft_cfm>0</soft_cfm>\n<soft_erp>0.2</soft_erp>\n<kp>1e+13</kp>\n<kd>1</kd>\n<max_vel>0.01</max_vel>\n<min_depth>0</min_depth>\n</ode>\n<bullet>\n<split_impulse>1</split_impulse>\n<split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>\n<soft_cfm>0</soft_cfm>\n<soft_erp>0.2</soft_erp>\n<kp>1e+13</kp>\n<kd>1</kd>\n</bullet>\n</contact>\n</surface>\n</collision>\n</link>\n<static>1</static>\n<allow_auto_disable>1</allow_auto_disable>\n<pose frame=''>1.06777 -0.068202 0 0 -0 0</pose>\n</model>")
 			
@@ -266,18 +266,6 @@ class Maze:
 		f_out.write('</world>\n</sdf>')
 		f_out.close()
 		z = 1.0
-
-		with open(root_path + "/launch/base.launch", "r") as base_file:
-			with open(root_path + "/launch/world.launch", "w") as final_file:
-				final_file.write(base_file.read())
-				for i in range(n_trucks):
-					x = depots[assignment[i]]["x"]
-					y = depots[assignment[i]]["y"]
-					# z = 0
-					# final_file.write("<node pkg=\"gazebo_ros\" type=\"spawn_model\" name=\"spawn_urdf_{3}\" args=\"-urdf -model turtlebot3_$(arg model)_{3} -x {0} -y {1} -z {2} -param robot_description -robot_namespace truck_{3}\"/>\n".format(x, y, z, i+1))
-				final_file.write("</launch>\n")
-				final_file.close()
-			base_file.close()
 
 		# list_of_list_of_coords = []
 		# f_out = self.copy_empty_world(root_path)
