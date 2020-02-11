@@ -69,5 +69,20 @@ optional arguments:
 
 3. Solver 2 Issues with clustering if there are too few packages.
 
+# Results
+1. Robot delivering packages.
+![Robot delivering packages](results/1.gif)
+
+2. Robot moving between warehouses once all packages in one are delivered.
+![Robot moving between warehouses](results/2.gif)
+
+3. An example of efficient splitting of packages between two robots.
+![Delivery splitting](results/4.gif)
+
+4. Some issues with the simulation.
+![Simulation issues](results/3.gif)
+
+More results are available in results folder.
+
 # Acknowledgements
 Done as a part of CSE 571: Artifical Intelligence course at Arizona State University. We would like to thank Prof. Siddharth Srivastava for the guidance and the Teaching Assistants for providing the base code to start off the project with (available in https://github.com/AAIR-lab/cse571_project).
