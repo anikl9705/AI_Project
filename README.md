@@ -68,3 +68,6 @@ optional arguments:
 2. Robot can randomly spin (similar to assignment 2).
 
 3. Solver 2 Issues with clustering if there are too few packages.
+
+# Acknowledgements
+Done as a part of CSE 571: Artifical Intelligence course at Arizona State University. We would like to thank Prof. Siddharth Srivastava for the guidance and the Teaching Assistants for providing the base code to start off the project with (available in https://github.com/AAIR-lab/cse571_project).
